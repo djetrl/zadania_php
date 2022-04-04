@@ -11,11 +11,12 @@ class Human {
 	}
 
 	public function display() {
-		echo sprintf('Привет, я %s %s %s ', $this->surname,$this->name,$this->batya);
+		echo sprintf('%s %s %s ', $this->surname,$this->name,$this->batya);
 	}
 
 	public function group() {
-		
+		echo 'Я в группе ';
 		$this->group->display();
 	}
 }
+?>
