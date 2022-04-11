@@ -1,22 +1,17 @@
 <?php 
-class Human {
+abstract class Human {
 	private $name;
 	private $surname;
-	private $batya;
+	private $patronymic;
 
 	public function __construct($n, $s, $p) {
 		$this->name = $n;
 		$this->surname = $s;
-		$this->batya = $p;
+		$this->patronymic = $p;
 	}
 
 	public function display() {
-		echo sprintf('%s %s %s ', $this->surname,$this->name,$this->batya);
-	}
-
-	public function group() {
-		echo 'Я в группе ';
-		$this->group->display();
+		echo sprintf('%s %s %s ', $this->name,$this->surname,$this->patronymic);
 	}
 }
 ?>
